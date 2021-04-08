@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+<div id="chatbox" class="chatbox">
+
+    <div id="chatlogs" class="chatlogs">
+
+    </div>
+
+    <div class="chat-form" id="form">
+        <form action="/response" method="POST">
+            <textarea name="userMsg" id="userMsg" cols="55" rows="3"></textarea>
+            <button class="send">SEND</button>
+        </form>
+    </div>
+
+
+
+</div>
+
+{% endblock %}
